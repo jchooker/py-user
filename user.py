@@ -21,5 +21,8 @@ class User:
         other_user.account_balance += amount
         return self
 
-testUser = User("Joseph Hooker", "jcoleh@yahoo.net")
-testUser.make_deposit(33).display_user_balance()
+testUser1 = User("Joseph Hooker", "jcoleh@yahoo.net")
+testUser2 = User("Emily Hooker", "ewarnahooker@ualr.biz")
+testUser3 = User("Nutler Hooker", "smalldaddi@pawspace.pizza")
+
+testUser1.make_deposit(300).make_deposit(1200).make_deposit(250).make_withdrawal(600).display_user_balance()
