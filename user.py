@@ -26,3 +26,9 @@ testUser2 = User("Emily Hooker", "ewarnahooker@ualr.biz")
 testUser3 = User("Nutler Hooker", "smalldaddi@pawspace.pizza")
 
 testUser1.make_deposit(300).make_deposit(1200).make_deposit(250).make_withdrawal(600).display_user_balance()
+testUser2.make_deposit(4000).make_deposit(1000).make_withdrawal(200).make_withdrawal(500).display_user_balance()
+testUser3.make_deposit(3000).make_withdrawal(100).make_withdrawal(200).display_user_balance()
+
+testUser1.transfer_money(testUser3, 300)
+testUser1.display_user_balance()
+testUser3.display_user_balance()
